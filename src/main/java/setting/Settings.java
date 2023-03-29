@@ -26,6 +26,9 @@ public class Settings {
     public static final String[] ENABLE_AUTOMATION = new String[] {"enable-automation"};
 
     public static final long IMPLICITLY_TIMEOUT = 0;
+    public static final float EXPLICITLY_TIMEOUT = 40.0f;
+    public static final float POLL_FREQUENCY = 0.1f;
+
 
 
 }
