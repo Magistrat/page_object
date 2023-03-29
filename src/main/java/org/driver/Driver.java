@@ -1,4 +1,4 @@
-package org.example;
+package org.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,12 +9,12 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.time.Duration;
 
-import static org.example.Settings.PLATFORM_DRIVER;
-import static org.example.Settings.PORTAINER_COMMAND_EXECUTOR;
-import static org.example.Settings.OPTIONS;
-import static org.example.Settings.MOBILE_EMULATION;
-import static org.example.Settings.ENABLE_AUTOMATION;
-import static org.example.Settings.IMPLICITLY_TIMEOUT;
+import static setting.Settings.PLATFORM_DRIVER;
+import static setting.Settings.PORTAINER_COMMAND_EXECUTOR;
+import static setting.Settings.OPTIONS;
+import static setting.Settings.MOBILE_EMULATION;
+import static setting.Settings.ENABLE_AUTOMATION;
+import static setting.Settings.IMPLICITLY_TIMEOUT;
 
 
 public class Driver {
