@@ -65,10 +65,10 @@ public class Driver {
             default -> {
             }
         }
-        driver.get("https://portainer.keyauto.ru/preprod/ssp/");
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICITLY_TIMEOUT));
+        driver.get("https://portainer.keyauto.ru/preprod/ssp/");
 
         return driver;
     }
