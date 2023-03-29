@@ -14,7 +14,8 @@ public class Settings {
             "--log-level=OFF",
             "no-sandbox",
             "disable-logging",
-            "disable-dev-shm-usage"
+            "disable-dev-shm-usage",
+            "--start-maximized"
     };
     public static final Map<String, String> MOBILE_EMULATION = new HashMap<>(){
         {
@@ -24,6 +25,7 @@ public class Settings {
 
     public static final String[] ENABLE_AUTOMATION = new String[] {"enable-automation"};
 
+    public static final long IMPLICITLY_TIMEOUT = 0;
 
 
 }
