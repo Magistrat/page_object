@@ -12,15 +12,15 @@ public class Locator {
         this.selector = selector;
         this.description = description;
 
-        switch (_By){
-            case ("CSS_SELECTOR"):
-                this.By_obj = By.cssSelector(selector);
-            case ("XPATH"):
-                this.By_obj = By.xpath(selector);
-            default:
-//                Поднимаем ошибку
-                break;
+        if ("CSS_SELECTOR".equals(_By)) {
+            this.By_obj = By.cssSelector(selector);
+        } else if ("XPATH".equals(_By)) {
+            this.By_obj = By.xpath(selector);
+        } else {
+            // Поднимаем ошибку
+            assert true;
         }
+
 
     }
 }
