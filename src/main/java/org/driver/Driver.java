@@ -19,24 +19,17 @@ import static setting.Settings.IMPLICITLY_TIMEOUT;
 
 public class Driver {
 
-    public static void main(String[] args) {
+    public static WebDriver return_driver() {
         try {
-            WebDriver driver = CreateDriver();
-
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-
-            driver.quit();
+            return create_driver();
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            return null;
         }
     }
 
 
-    public static WebDriver CreateDriver() throws MalformedURLException {
+    public static WebDriver create_driver() throws MalformedURLException {
         WebDriver driver = null;
 
 
