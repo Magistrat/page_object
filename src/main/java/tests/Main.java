@@ -23,6 +23,8 @@ public class Main {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
+
+
 //        final By locator_test = By.xpath("//span[text()=\"Телефон\"]/..");
 
 
